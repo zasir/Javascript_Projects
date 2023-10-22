@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,black,rgb(0, 195, 255));
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.darkmode{
+    background : black;
+    color:white;
+    
+}
+
+.intro{
+    padding: 20px;
+    height: 50px;
+    width: 400px; 
+    color:white;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgb(0, 195, 255);
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px   rgb(0, 195, 255);
+}
+
+.intro:hover{
+    color: cyan;
+}
+
+.introdkmode{
+    color:white;
+    box-shadow: -5px 5px 10px  grey;
+    border:1px solid white;
+
+}
+
+.darkmodebtn{   
+    position:absolute;
+    
+    top: 10px;
+    left: 10px; 
+    border: none;
+    width: 90px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+
+
+.darkmodebtn:hover{
+    color:aqua;
+}
+
+.darkmodebtndk:hover{
+    color:grey;
+}
+
+
+
+
+.calc_border {
+    padding: 20px;
+    height: 550px;
+    width: 400px;
+    background: transparent;
+    border: 1px solid rgb(0, 195, 255);
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px rgb(0, 195, 255);
+}
+.calc_outputdk{
+    border:1px solid grey;
+    box-shadow: -5px 5px 10px grey;
+
+}
+.output{
+    height: 110px;
+    padding: 10px;
+    margin-bottom: 4px;
+    color: white;
+    background: transparent;
+
+    border: 1px solid rgb(0, 195, 255);
+    box-shadow: -5px 5px 10px rgb(0, 195, 255);
+    border-radius: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    word-break: break-all;
+  
+   
+    
+}
+
+.outputdk{  
+border:1px solid grey;
+box-shadow: -5px 5px 10px grey;  
+}
+
+.previous-operand{
+color:rgba(255,255,255,0.75);
+font-size: 25px;
+}
+.current-operand{
+color:white;
+font-size: 40px;
+
+    }
+
+
+button{
+    
+    border: none;
+    width: 66px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 60%;
+    font-size: 20px;
+   
+
+    background: transparent;
+    color: white;
+    box-shadow: -5px 0px 10px rgb(0, 195, 255);
+    cursor: pointer;
+
+}
+
+.buttondk{
+    
+    box-shadow: -5px 0px 10px grey;
+
+}
+
+.buttondk:hover{
+    color: cyan;
+}
+
+button:hover{
+    color:black
+}
+
+.op{
+    font-size: 26px;
+}
+
+.operator{
+    color:rgb(0, 255, 13)
+}
+.equalbtn{
+    background-color:#fb7c14;
+}

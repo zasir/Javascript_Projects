@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #ffd55c ,#5a95ff  )
+}
+.app{
+    font-family: "Poppins",sans-serif ;
+    width: min(90vw,500px);
+   
+    position: absolute; 
+  
+    top: 20px;
+    margin: auto;
+    left: 0;
+    right: 0; 
+   
+
+}
+.container{
+    padding: 32px 40px;
+    background-color: #f1f8fb;
+    border-radius: 0.8em;
+    box-shadow: 0 1em 2em rgba(0,0,0,0.3);
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    gap: 1em;
+}
+#wrapper input{
+    border: none;
+    background-color: transparent;
+    font-size: 0.9em; 
+    color: black;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 1em 0.5em
+}
+#wrapper input:focus{
+    outline:none;
+    border-color: #5a95ff;
+    transition:  ease-out 0.7s;
+
+}
+#wrapper button{
+    border: none;
+    background-color: #5a95ff;
+    border-radius: 0.5em;
+    font-size: 1em;
+    color: #ffffff;
+    cursor: pointer;
+}
+#error{
+    text-align: center;
+    background-color: #ffffff;
+    color:red;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 0.8em;
+    display: none;
+}
+
+#task{
+    margin-top: 1em;
+    padding: 1em 0.5em;
+}
+
+.task{
+    background-color: #ffffff;
+    padding: 0.8em 1em;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr;
+    gap :1em;
+    box-shadow: 0 1em 1em rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+.task input[type="checkbox"]{
+   
+    appearance: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #e1e1e1;
+}
+.task input[type="checkbox"]:checked{
+    background-color: #5a95ff;
+    border-color: #5a95ff;
+}
+.task input[type="checkbox"]:checked:before{
+    position: relative;
+   content: "\f00c";
+   color: #ffffff;
+   font-size: 0.8em;
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   left: 20%
+}
+.task span{
+    font-size: 0.9em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.task button{
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+.edit{
+    background-color: #5a95ff;
+    
+
+}
+.delete{
+    background-color: red;
+}
+.edit i{
+    position: absolute;
+    bottom: 9px;
+    right: 7px;
+}
+.delete i{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+.completed{
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+#count-value{
+    color:red;
+}

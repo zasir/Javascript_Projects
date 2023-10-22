@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/bcg_img.webp);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 10px;
+
+}
+.counter{
+    margin-top: 10px;
+    height: 150px;
+    width: 1000px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.date-time{
+    height: 40%;
+    width: 80px;
+    margin: 10px 30px;
+    padding: 10px;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border-color: transparent;
+    color:black
+    
+
+}
+
+.setCounter{
+    position:absolute;
+    bottom:20px;
+    /* height: 100px;
+    width: 100px; */
+    /* border: 1px solid red; */
+}
+b{
+    font-size: larger;
+
+}
+button{
+    /* border:transparent */
+    margin: 0px 20px;
+    height: 40px;
+    width: 150px;
+}
+
+input{
+    margin: 0px 20px;
+    padding: 0px 10px;
+    height: 40px;
+    width: 210px;
+}
